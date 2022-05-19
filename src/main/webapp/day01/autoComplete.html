@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동완성, 비밀번호 제한</title>
+</head>
+
+<body>
+    <form action="">
+    	<label for="">검색</label>
+        <input type="search" list="fruit">
+        <datalist id="fruit">
+            <option>apple</option>
+            <option>banana</option>
+            <option>peach</option>
+            <option>grape</option>
+        </datalist>
+    	<label for="">검색</label>
+        <input type="password" pattern="^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{6,16}$">
+    </form>
+</body>
+
+</html>
